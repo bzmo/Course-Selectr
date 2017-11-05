@@ -1,0 +1,70 @@
+
+/* Source: https://stackoverflow.com/questions/1964839/
+    how-can-i-create-a-please-wait-loading-animation-using-jquery */
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, 0.6 )
+                url('http://i.stack.imgur.com/FhHRx.gif')
+                50% 50%
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+.course, .course-clicked {
+  text-align: left;
+  font-family: sans-serif;
+  color: white;
+  border-style: groove;
+  border-width: thick;
+  padding: 0.5em;
+  margin: auto;
+  width: 90%;
+}
+
+
+#form h3 {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1em;
+}
+
+#form .form-input .form-label {
+  color: white;
+  font-family: sans-serif;
+  padding-right: 0.5em;
+}
+
+.submit-btn {
+  text-align: center;
+  padding-top:0.5em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+
+#viewContent {
+  padding-bottom: 1em;
+}
