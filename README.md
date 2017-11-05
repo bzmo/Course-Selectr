@@ -1,6 +1,6 @@
 <b> Course Selectr </b>
 
-Utilizing lazy loading, Course Selectr is a simple, responsive app that simplifies course selection. The main goal is to help the user see which relevant courses are being offered at the University of Waterloo in the current or upcoming term.
+Utilizing lazy loading, Course Selectr is a simple, responsive app that simplifies course selection. The main goal is to help students see which relevant courses are being offered at the University of Waterloo in the current or upcoming term.
 
 <b> How to Use </b> 
 
