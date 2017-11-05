@@ -2,9 +2,7 @@
 <html lang="en">
 	<head>
 		<meta content="initial-scale=1.0" name="viewport">
-		<title>
-			CS 349 A3
-		</title>
+		<title> Course Selectr </title>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js" type="text/javascript"></script>
 		<script src="app.js" type="text/javascript"></script>
@@ -12,32 +10,31 @@
 		<link rel="stylesheet" type="text/css" href="styleIDsClasses.css">
 	</head>
 	<body onload="startApp()">
-		<!-- Update this file by adding your content inside the body. -->
 		<div id="form">
-				<h3> Search for Courses </h3>
-				<table class="form-input">
-					<tr>
-						<td><label class="form-label">Subject :</label></td>
-						<td><select id="subject" size="3"></select></td>
-					</tr>
-					<tr>
-						<td><label class="form-label">Course Number :</label></td>
-						<td><input id="course_number" type="text"></td>
-					</tr>
-					<tr>
-						<td><label class="form-label">Term :</label></td>
-						<td>
-							<select id="term">
-							  <option value="N/A">N/A</option>
-								<option value="Current">Current</option>
-								<option value="Next">Next</option>
-							</select>
-						</td>
-					</tr>
-				</table>
-				<div class="submit-btn"><button id="submit">Submit</button></div>
+			<h3> Search for Courses </h3>
+			<table class="form-input">
+				<tr>
+					<td><label class="form-label">Subject :</label></td>
+					<td><select id="subject" size="3"></select></td>
+				</tr>
+				<tr>
+					<td><label class="form-label">Course Number :</label></td>
+					<td><input id="course_number" type="text"></td>
+				</tr>
+				<tr>
+					<td><label class="form-label">Term :</label></td>
+					<td>
+						<select id="term">
+							<option value="N/A">N/A</option>
+							<option value="Current">Current</option>
+							<option value="Next">Next</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<div class="submit-btn"><button id="submit">Submit</button></div>
 		</div>
-	<div id="viewContent"></div> <!-- By default, the View contents will be added here. Change this if you wish. -->
-  <div class="modal"><!-- Place at bottom of page --></div>
+		<div id="viewContent"></div>
+		<div class="modal"></div>
 	</body>
 </html>
