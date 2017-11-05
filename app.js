@@ -99,30 +99,30 @@ const apiKey = '3b07c47c9205c7b543754492bcd13167';
       });
     }
 
-		// Add an observer to the list
-		addObserver(observer) {
-        if (_.isUndefined(this._observers)) {
-            this._observers = [];
-        }
-        this._observers.push(observer);
-        observer(this, null);
+    // Add an observer to the list
+    addObserver(observer) {
+      if (_.isUndefined(this._observers)) {
+        this._observers = [];
+      }
+      this._observers.push(observer);
+      observer(this, null);
     }
 
-		// Notify all the observers on the list
-		notify(args) {
-        if (_.isUndefined(this._observers)) {
-            this._observers = [];
-        }
-        _.forEach(this._observers, (obs) => {
-            obs(this, args);
-          });
+    // Notify all the observers on the list
+    notify(args) {
+      if (_.isUndefined(this._observers)) {
+        this._observers = [];
+      }
+      _.forEach(this._observers, (obs) => {
+        obs(this, args);
+      });
     }
   }
 
   class AppView {
     constructor(model, div) {
       this.that = this;
-			this.model = model;
+      this.model = model;
       this.div = div;
       model.addObserver(this.updateView); // Add this View as an Observer
     }
